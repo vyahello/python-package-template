@@ -18,7 +18,9 @@ setup(
     url="https://github.com/vyahello/python-package-template",
     packages=find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3.6, 3.7, 3.8",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],

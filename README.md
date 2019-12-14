@@ -13,7 +13,39 @@ All steps are used from [packaging-projects](https://packaging.python.org/tutori
 
 ## Usage
 
-TBD
+There are couple of steps you have to accomplish to have own python package:
+- Make sure you have package ready to be shipped e.g [example](example)
+- Create bunch of meta files: [README.md](README.md), [LICENSE.md](LICENSE.md) and [requirements.txt](requirements.txt) files
+- Create [setup.py](setup.py) file
+- Generate distribution packages
+  - Update `setuptools` and `wheel`:
+    ```bash
+    ➜ pip install --user --upgrade setuptools wheel
+    ```
+  - Run command from the same directory where `setup.py` is located:
+    ```bash
+    ➜ pip setup.py sdist bdist_wheel
+    ```
+  - You should see newly created `dist/` directory with `.tar.gz` extension file
+- Upload package to PIP (python package index)
+  - Create test account on [https://test.pypi.org/account/register](https://test.pypi.org/account/register)
+  - Install `twine` package
+    ```bash
+    ➜ pip install --user --upgrade twine
+    ```
+  - Upload all of the archives under `dist/`
+    ```bash
+    ➜ python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+    ```
+- Install brand new python package
+  ```bash
+  pip install --index-url https://test.pypi.org/simple/ --no-deps package-tutorial-vyahello
+  ```
+  > from example import tutorial
+  >
+  > t = tutorial.Tutorial("foo", "bar")
+  >
+  > t.meta()
 
 ## Meta
 
