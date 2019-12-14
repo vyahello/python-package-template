@@ -1,2 +1,4 @@
 black==19.10b0
 pylint==2.4.4
+setuptools==42.0.2
+wheel==0.33.6
