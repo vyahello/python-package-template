@@ -15,10 +15,10 @@ setup(
     description="A simple example package tutorial",
     long_description=_description(),
     long_description_content_type="text/markdown",
-    url="https://github.com/vyahello/",
+    url="https://github.com/vyahello/python-package-template",
     packages=find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6, 3.7, 3.8",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
