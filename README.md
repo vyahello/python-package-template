@@ -1,4 +1,6 @@
+[![Release](https://img.shields.io/badge/release-0.0.1-red)](https://test.pypi.org/project/package-tutorial-vyahello/#description)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+
 [![Hits-of-Code](https://hitsofcode.com/github/vyahello/python-package-template)](https://hitsofcode.com/view/github/vyahello/python-package-template)
 
 # Python package template
