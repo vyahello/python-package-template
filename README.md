@@ -1,6 +1,5 @@
 [![Release](https://img.shields.io/badge/release-0.0.1-red)](https://test.pypi.org/project/package-tutorial-vyahello/#description)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-
 [![Hits-of-Code](https://hitsofcode.com/github/vyahello/python-package-template)](https://hitsofcode.com/view/github/vyahello/python-package-template)
 
 # Python package template
@@ -26,7 +25,7 @@ There are couple of steps you have to accomplish to have own python package:
     ```
   - Run command from the same directory where `setup.py` is located:
     ```bash
-    ➜ pip setup.py sdist bdist_wheel
+    ➜ python setup.py sdist bdist_wheel
     ```
   - You should see newly created `dist/` directory with `.tar.gz` extension file
 - Upload package to PIP (python package index)
@@ -43,11 +42,13 @@ There are couple of steps you have to accomplish to have own python package:
   ```bash
   pip install --index-url https://test.pypi.org/simple/ --no-deps package-tutorial-vyahello
   ```
-  > from example import tutorial
-  >
-  > t = tutorial.Tutorial("foo", "bar")
-  >
-  > t.meta()
+Then please launch following intructions from your environment:
+  ```python
+  from example import tutorial
+  
+  t = tutorial.Tutorial("foo", "bar")
+  t.meta()
+  ```
 
 ## Meta
 
